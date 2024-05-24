@@ -109,4 +109,3 @@ WantedBy=multi-user.target
 ```bash
 curl "http://localhost:5000/generate_totp_qr?user=username&secret=your_secret_key&issuer=YourApp" --output totp_qr_code.png
 ```
-![image](https://github.com/mahdymo/qr_generator_onprem/assets/13091624/29a72b4d-a3e6-400c-a717-8c7486a4ce79)
