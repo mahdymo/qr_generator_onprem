@@ -96,3 +96,17 @@ WantedBy=multi-user.target
 - Run `sudo systemctl daemon-reload`.
 - Run `sudo systemctl start flask_app`.
 
+
+4- Testing the Application Locallyز
+   Open your web browser or use `curl` to test the application. For example, to generate a QR code, use the following URL structure:
+   ```
+   http://localhost:5000/generate_totp_qr?user=username&secret=your_secret_key&issuer=YourApp
+   ```
+
+   Replace `username`, `your_secret_key`, and `YourApp` with the appropriate values.
+
+5- Example Usage with curl:
+```bash
+curl "http://localhost:5000/generate_totp_qr?user=username&secret=your_secret_key&issuer=YourApp" --output totp_qr_code.png
+```
+![image](https://github.com/mahdymo/qr_generator_onprem/assets/13091624/29a72b4d-a3e6-400c-a717-8c7486a4ce79)
